@@ -18,7 +18,7 @@ const DeleteBlog = () => {
       setError(null);
       try {
         const token = getToken();
-        const response = await axios.get('https://backend-ad-s-blog-app-1.onrender.com/api/posts', {
+        const response = await axios.get('https://backend-blogapp-w6og.onrender.com/api/posts', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -41,7 +41,7 @@ const DeleteBlog = () => {
       setError(null);
       try {
         const token = getToken();
-        await axios.delete(`https://backend-ad-s-blog-app-1.onrender.com/api/posts/delblog/${id}`, {
+        await axios.delete(`https://backend-blogapp-w6og.onrender.com/api/posts/delblog/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://backend-ad-s-blog-app-1.onrender.com/api/user",
+    baseUrl: "https://backend-blogapp-w6og.onrender.com/api/user",
     credentials: "include",
   }),
   tagTypes: ["User"], // Tag type used for invalidation and refetching

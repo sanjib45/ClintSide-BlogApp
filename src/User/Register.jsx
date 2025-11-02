@@ -14,7 +14,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-ad-s-blog-app-1.onrender.com/api/user/reg",
+        "https://backend-blogapp-w6og.onrender.com/api/user/reg",
         {
           username,
           email,

@@ -9,7 +9,7 @@ const ManageUser = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('https://backend-ad-s-blog-app-1.onrender.com/api/user/users');
+        const res = await axios.get('https://backend-blogapp-w6og.onrender.com/api/user/users');
         console.log('API Response:', res.data); // Log the response to check its structure
 
         // Access the users array from the response
@@ -34,7 +34,7 @@ const ManageUser = () => {
   const handleRoleChange = async (id, newRole) => {
     try {
       const token = getToken();
-      await axios.put(`https://backend-ad-s-blog-app-1.onrender.com/api/user/userupd/${id}`, { role: newRole }, {
+      await axios.put(`https://backend-blogapp-w6og.onrender.com/api/user/userupd/${id}`, { role: newRole }, {
         headers: {
           Authorization: `Bearer ${token}`, 
         },

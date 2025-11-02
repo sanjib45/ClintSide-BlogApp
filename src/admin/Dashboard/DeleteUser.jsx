@@ -9,7 +9,7 @@ const DeleteUser = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('https://backend-ad-s-blog-app-1.onrender.com/api/user/users');
+        const res = await axios.get('https://backend-blogapp-w6og.onrender.com/api/user/users');
         console.log('API Response:', res.data); // Log the response to check its structure
 
         // Access the users array from the response
@@ -34,7 +34,7 @@ const DeleteUser = () => {
   const handleDeleteUser = async (id) => {
     try {
       const token = getToken(); // Get the token from local storage
-      await axios.delete(`https://backend-ad-s-blog-app-1.onrender.com/api/user/deluser/${id}`, {
+      await axios.delete(`https://backend-blogapp-w6og.onrender.com/api/user/deluser/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`, 
         },

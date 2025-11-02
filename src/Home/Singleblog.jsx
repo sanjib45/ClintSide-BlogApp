@@ -13,7 +13,7 @@ const Singleblog = () => {
       try {
         console.log(`Fetching blog post with ID: ${id}`);
         const response = await axios.get(
-          `https://backend-ad-s-blog-app-1.onrender.com/api/posts/${id}`
+          `https://backend-blogapp-w6og.onrender.com/api/posts/${id}`
         );
         console.log("Fetched blog post:", response.data);
         setPost(response.data);

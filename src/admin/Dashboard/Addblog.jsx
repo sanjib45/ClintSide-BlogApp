@@ -36,7 +36,7 @@ const Addblog = () => {
     };
 
     try {
-      const response = await axios.post('https://backend-ad-s-blog-app-1.onrender.com/api/posts/addposts', postData, {
+      const response = await axios.post('https://backend-blogapp-w6og.onrender.com/api/posts/addposts', postData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
